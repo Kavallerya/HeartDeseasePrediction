@@ -28,6 +28,9 @@ W projekcie wykorzystano zbior danych **Heart Disease Dataset** z 1988 roku, kt�
 - Sprawdzono rozkład zmiennej docelowej, aby ocenić równowagę klas.
 - Zwizualizowano korelacje między atrybutami przy użyciu macierzy korelacji.
 
+Po przeanalizowaniu macierzy możemy zobaczyć, które klasy mają największy wpływ na
+ryzyko chorób serca
+
 ### 2. Przygotowanie danych
 - Podzielono dane na zbior treningowy (70%) i testowy (30%).
 - Przeskalowano dane dla modelu **Logistic Regression**.
@@ -46,6 +49,7 @@ Zastosowano trzy algorytmy:
     - **F1 Score**,
     - **AUC**.
 - Stworzono krzywe **ROC** dla każdego modelu.
+- Stworzono diagram porównujący wydajność modeli .
 
 ### 5. Testowanie
 - Zapisano najlepsze modele w formacie `.joblib`.
