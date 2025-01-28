@@ -59,7 +59,9 @@ W projekcie wykorzystano zbior danych **Heart Disease Dataset** z 1988 roku, kt�
 
 Po przeanalizowaniu macierzy możemy zobaczyć, które klasy mają największy wpływ na
 ryzyko chorób serca
-
+- **thalach** - maksymalna osiągnięta częstość akcji serca.
+- **slope** - nachylenie odcinka ST podczas szczytowego wysiłku:
+- **cp** - rodzaj bólu w klatce piersiowej:
 ### 2. Przygotowanie danych
 - Podzielono dane na zbior treningowy (70%) i testowy (30%).
 - Przeskalowano dane dla modelu **Logistic Regression**.
