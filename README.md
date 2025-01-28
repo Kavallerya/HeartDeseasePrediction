@@ -12,36 +12,40 @@ W projekcie wykorzystano zbior danych **Heart Disease Dataset** z 1988 roku, kt�
 
 - **age** - wiek pacjenta (w latach).
 - **sex** - płeć pacjenta:
-  - `0` - kobieta
   - `1` - mężczyzna
+  - `0` - kobieta
 - **cp** - rodzaj bólu w klatce piersiowej:
-  - `0` - Brak bólu
-  - `1` - Nietypowa dławica piersiowa
-  - `2` - Ból niezwiązany z sercem
-  - `3` - Typowa dławica piersiowa
-- **trestbps** - ciśnienie krwi w spoczynku (mm Hg).
+  - `0` - typowa dławica piersiowa
+  - `1` - atypowa dławica piersiowa
+  - `2` - ból niezwiązany z dławicą
+  - `3` - bezobjawowy
+- **trestbps** - ciśnienie krwi w spoczynku (w mm Hg przy przyjęciu do szpitala).
 - **chol** - poziom cholesterolu we krwi (mg/dl).
 - **fbs** - poziom cukru we krwi na czczo (> 120 mg/dl):
-  - `1` - tak
-  - `0` - nie
-- **restecg** - wyniki elektrokardiogramu:
-  - `0` - Normalny
-  - `1` - Nieprawidłowości fali ST-T
-  - `2` - Przeciążenie lewej komory
-- **thalach** - maksymalna częstość akcji serca.
+  - `1` - prawda
+  - `0` - fałsz
+- **restecg** - wyniki elektrokardiogramu w spoczynku:
+  - `0` - normalny
+  - `1` - nieprawidłowości fali ST-T (odwrócenie fali T i/lub uniesienie lub obniżenie ST > 0,05 mV)
+  - `2` - prawdopodobne lub wyraźne przerost lewej komory według kryteriów Estesa
+- **thalach** - maksymalna osiągnięta częstość akcji serca.
 - **exang** - wysiłkowa dławica piersiowa:
   - `1` - tak
   - `0` - nie
-- **oldpeak** - obniżenie odcinka ST w porównaniu ze stanem spoczynkowym.
-- **nachylenie** - nachylenie odcinka ST podczas szczytowego wysiłku:
+- **oldpeak** - obniżenie odcinka ST wywołane wysiłkiem w porównaniu do stanu spoczynkowego.
+- **slope** - nachylenie odcinka ST podczas szczytowego wysiłku:
   - `0` - rosnące
-  - `1` - Płaskie
-  - `2` - Nachylenie w dół
-- **ca** - liczba głównych naczyń (od 0 do 4) wybarwionych za pomocą fluoroskopii.
+  - `1` - płaskie
+  - `2` - opadające
+- **ca** - liczba głównych naczyń (0-3) wybarwionych fluoroskopowo.
 - **thal** - status talasemii:
-  - `0` - Normalny
-  - `1` - Utrwalony defekt
-
+  - `0` - błąd (w oryginalnym zbiorze danych 0 oznacza NaN)
+  - `1` - stały defekt
+  - `2` - normalny
+  - `3` - odwracalny defekt
+- **target** - etykieta:
+  - `0` - brak choroby
+  - `1` - choroba
 
 
 
