@@ -9,16 +9,41 @@ Celem projektu jest stworzenie modelu uczenia maszynowego do przewidywania obecn
 W projekcie wykorzystano zbior danych **Heart Disease Dataset** z 1988 roku, który  łączy cztery bazy danych (Cleveland, Hungary, Switzerland i Long Beach V). Analiza obejmuje podzbior zawierający 14 atrybutów.
 
 ### Główne atrybuty:
-- **age**: wiek pacjenta (w latach);
-- **sex**: płeć (1 = mężzyzna; 0 = kobieta);
-- **cp**: rodzaj bólu w klatce piersiowej;
-- **trestbps**: ciśnienie krwi w stanie spoczynku (mm Hg);
-- **chol**: poziom cholesterolu w surowicy (mg/dl);
-- **fbs**: poziom cukru na czczo (>120 mg/dl) (1 = tak; 0 = nie);
-- **restecg**: wyniki EKG w stanie spoczynku;
-- **thalach**: maksymalna osiągnięta częstość akcji serca;
-- **exang**: dławica wywołana wysiłkiem fizycznym (1 = tak; 0 = nie);
-- **oldpeak**: obniżenie ST wywołane wysiłkiem fizycznym w stosunku do spoczynku.
+
+- **age** - wiek pacjenta (w latach).
+- **sex** - płeć pacjenta:
+  - `0` - kobieta
+  - `1` - mężczyzna
+- **cp** - rodzaj bólu w klatce piersiowej:
+  - `0` - Brak bólu
+  - `1` - Nietypowa dławica piersiowa
+  - `2` - Ból niezwiązany z sercem
+  - `3` - Typowa dławica piersiowa
+- **trestbps** - ciśnienie krwi w spoczynku (mm Hg).
+- **chol** - poziom cholesterolu we krwi (mg/dl).
+- **fbs** - poziom cukru we krwi na czczo (> 120 mg/dl):
+  - `1` - tak
+  - `0` - nie
+- **restecg** - wyniki elektrokardiogramu:
+  - `0` - Normalny
+  - `1` - Nieprawidłowości fali ST-T
+  - `2` - Przeciążenie lewej komory
+- **thalach** - maksymalna częstość akcji serca.
+- **exang** - wysiłkowa dławica piersiowa:
+  - `1` - tak
+  - `0` - nie
+- **oldpeak** - obniżenie odcinka ST w porównaniu ze stanem spoczynkowym.
+- **nachylenie** - nachylenie odcinka ST podczas szczytowego wysiłku:
+  - `0` - rosnące
+  - `1` - Płaskie
+  - `2` - Nachylenie w dół
+- **ca** - liczba głównych naczyń (od 0 do 4) wybarwionych za pomocą fluoroskopii.
+- **thal** - status talasemii:
+  - `0` - Normalny
+  - `1` - Utrwalony defekt
+
+
+
 
 ---
 
