@@ -104,3 +104,5 @@ Zastosowano trzy algorytmy:
 ## Demonstracja
 Model jest zdolny do przewidywania obecności chorób serca na podstawie nowych danych medycznych pacjenta.
 
+Projekt ten jest również dostępny w formie aplikacji, która oczekuje od użytkownika zestawu parametrów medycznych pacjenta i zwraca prognozy z modelu
+
